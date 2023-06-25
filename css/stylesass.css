@@ -88,28 +88,29 @@ footer {
     text-align: center;
     padding-bottom: 2%; }
   footer .footerContacto {
-    width: 40%;
+    width: 30%;
     padding-top: 2%; }
     footer .footerContacto h4 {
       font-size: 2.5rem;
       padding-top: 2%;
-      padding-left: 2%; }
+      padding-left: 2%;
+      text-align: center; }
   footer .ulFooter {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    display: flex;
     margin-top: 5%;
     margin-bottom: 2%;
     width: 100%; }
     footer .ulFooter img {
       width: 25%; }
     footer .ulFooter li {
+      width: 25%;
       text-align: center; }
       footer .ulFooter li:hover {
-        width: 105%; }
+        width: 30%; }
 
 .imagenFooter {
   display: flex;
@@ -185,3 +186,18 @@ main {
       padding: 2%; }
       main ul li:hover {
         font-family: "Adam Bold"; }
+
+/*Estilo de Gracias*/
+main {
+  padding: 0%; }
+  main h2 {
+    margin: 5%;
+    font-size: 5rem; }
+  main p {
+    padding-right: 5%;
+    padding-left: 5%;
+    font-size: 3.5rem;
+    margin: 1%; }
+  main img {
+    width: 100%;
+    margin-top: 2%; }

@@ -97,18 +97,18 @@ footer{
         padding-bottom: 2%;
     }
     .footerContacto {
-        width: 40%;
+        width: 30%;
         padding-top: 2%;    
         h4 {    
             font-size: 2.5rem;
             padding-top: 2%;
             padding-left: 2%;
+            text-align: center;
         }
     }
     .ulFooter{
         list-style-type: none;
-        @include flex (row, space-between, center);
-        display: flex;
+        @include flex (row, center, center);
         margin-top: 5%;
         margin-bottom: 2%;
         width: 100%;
@@ -116,9 +116,10 @@ footer{
             width: 25%;
         }
         li {
+            width: 25%;
             text-align: center;
             &:hover {
-                width: 105%;
+                width: 30%;
             }
         }
     }
