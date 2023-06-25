@@ -1,0 +1,112 @@
+// Estilo Fuentes
+/*Estilo de fuente*/
+@font-face {
+    font-family: "Adam Light";
+    src: url("../Media/Adam/Adam-Light.ttf");
+ }
+ 
+ @font-face{
+     font-family: "Adam Bold";
+     src: url("../Media/Adam/Adam-Bold.ttf");
+ }
+ 
+ // Estilo General del Sitio
+/*Estilo del sitio */
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+    font-family: $Tipografia;
+    color: $Gris;
+    font-size: 62.5%;
+} 
+
+// Estilo del header    
+/*Estilo de Header*/
+header {
+    background-color: $ColorHeader;
+    font-size: 2rem;
+    @include flex (row, space-between, center);
+    position: sticky;
+    img {
+        width: 70%;
+        margin-top: 0%;
+        margin-left: 40%;
+        margin-bottom: 0%;
+    }
+}
+nav {
+    width: 40%;
+    ul {
+        list-style-type: none;
+        @include flex (row, space-between, center);
+        margin-right: 5%;
+        a {
+            color: $Gris;
+            text-decoration: none;
+            :hover {
+                color: $GrisHover;
+            }
+        }    
+    }
+}
+    
+// Estilo del Body    
+/*Estilo de Body*/
+body {
+    height: 100%;
+    background-color: $ColorFondo;
+    @include flex (column, none, center);
+    h1 {
+        font-size: 6rem;
+        @include flex (row, center, center);
+        margin-top: 3%;
+    }
+    h2 {
+        font-size: 4rem;
+        margin-bottom: 3%;
+        @include flex (column, center, center);
+    }
+    h3 {
+        font-size: 3rem;
+    }
+    p {
+        font-size: 2.5rem;
+    }
+    
+}
+
+// Estilo del Footer    
+/*Estilo de Footer*/
+footer{
+    margin-top: auto;
+    background-color: $ColorFooter;
+    font-size: 2rem; 
+    h4 {
+        font-size: 2.5rem;
+        padding-top: 2%;
+        padding-left: 2%;
+    }
+    p {
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 2%;
+    }
+    img {
+        @include flex (row, end, center);
+        width: 15%;
+    }
+}
+.ulFooter{
+    list-style-type: none;
+    @include flex (row, space-around, center);
+    display: flex;
+    margin: 2%;
+    width: 70%;
+    img {
+        width: 25px;
+    }
+}
