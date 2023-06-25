@@ -1,0 +1,24 @@
+// Estilo de Nosotros
+/*Estilo de Nosotros*/
+
+main {
+    padding: 5%;
+    p {
+        text-align: justify;
+    }
+    ul {
+        margin-top: 3%;
+        margin-bottom: 3%;
+        font-size: 2.2rem;
+        list-style-type: none;
+        background-color:#e6d7c5;
+        @include flex (row, space-around, center);
+        li {
+            text-align: justify;
+            padding: 2%;
+            &:hover{
+                font-family: $TipografiaNegrita;
+            }
+        }
+    }
+}
