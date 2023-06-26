@@ -52,7 +52,7 @@ header {
           color: #5e5e5f;
           font-family: "Adam Bold"; }
 
-/*Estilo de MAin*/
+/*Estilo de Main*/
 main {
   height: 100%;
   background-color: #efeae4;
@@ -69,7 +69,6 @@ main {
     margin-top: 3%; }
   main h2 {
     font-size: 4rem;
-    margin-bottom: 3%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,19 +117,38 @@ footer {
   justify-content: end;
   align-items: center; }
 
+/*Estilo de Boton*/
+.boton {
+  background-color: #404041;
+  font-family: "Adam Bold";
+  font-size: 2rem;
+  border: #404041;
+  padding: 2% 4%;
+  color: whitesmoke;
+  margin: 2%;
+  border-radius: 15%;
+  box-shadow: #323233; }
+  .boton:hover {
+    background-color: #5e5e5f; }
+
 /*Estilo de Index*/
-.index {
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .index p {
+  main h2 {
+    margin: 0%;
+    padding: 0%; }
+  main p {
     text-align: center;
     width: 90%;
     margin-bottom: 3%; }
-  .index img {
+  main img {
     max-height: 100%;
     max-width: 100%;
+    padding-top: 0%;
+    margin-top: 0%;
     margin-right: 0%;
     margin-left: 0%;
     margin-bottom: 2%; }
@@ -168,13 +186,13 @@ footer {
 
 /*Estilo de Nosotros*/
 main {
-  padding: 5%; }
+  padding: 2%; }
   main p {
-    text-align: justify; }
+    text-align: justify;
+    padding-bottom: 5%; }
   main ul {
-    margin-top: 3%;
-    margin-bottom: 3%;
-    font-size: 2.2rem;
+    padding: 2%;
+    font-size: 3rem;
     list-style-type: none;
     background-color: #e6d7c5;
     display: flex;
@@ -188,10 +206,14 @@ main {
         font-family: "Adam Bold"; }
 
 /*Estilo de Aromas*/
+.aromas {
+  padding-top: 3%; }
+
 .coco {
-  padding: 3%;
+  padding-left: 3%;
   text-align: justify;
   width: 90%;
+  padding-top: 0%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -208,9 +230,10 @@ main {
     font-family: "Adam Bold"; }
 
 .lavanda, .jazmin, .azahar, .lima {
-  padding: 3%;
+  padding-left: 3%;
   text-align: justify;
   width: 90%;
+  padding-top: 0%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -226,9 +249,48 @@ main {
     background-color: #e6d7c5;
     font-family: "Adam Bold"; }
 
+/*Estilo de Contacto*/
+main {
+  padding: 3%; }
+  main h1 {
+    margin-bottom: 5%; }
+  main form {
+    width: 70%;
+    background-color: #e6d7c5;
+    margin-bottom: 5%; }
+  main .formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0%; }
+  main .formulariodatos, main .formulariopedido {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    margin: 5%;
+    font-size: 2.5rem;
+    border-radius: 2%;
+    border-width: thin;
+    font-family: "Adam Light";
+    width: 50%; }
+  main label {
+    font-family: "Adam Light";
+    font-size: 2.5rem; }
+  main input, main select {
+    font-family: "Adam Bold";
+    font-size: 2rem; }
+  main .botonformulario {
+    text-align: end;
+    margin-bottom: 3%;
+    margin-right: 3%; }
+
 /*Estilo de Gracias*/
 main {
-  padding: 0%; }
+  padding: 0%;
+  /*Falta ocultar imagen mobile de web y web de mobile*/ }
   main h2 {
     margin: 5%;
     font-size: 5rem; }

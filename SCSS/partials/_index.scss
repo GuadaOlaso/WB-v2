@@ -1,7 +1,11 @@
 // Diseño del Index //
 /*Estilo de Index*/
-.index {
+main {
     @include flex (column, center, center);
+    h2 {
+        margin: 0%;
+        padding: 0%;
+    }
     p {
         text-align: center;
         width: 90%;
@@ -10,6 +14,8 @@
     img {
         max-height: 100%;
         max-width: 100%;
+        padding-top: 0%;
+        margin-top: 0%;
         margin-right: 0%;
         margin-left: 0%;
         margin-bottom: 2%;

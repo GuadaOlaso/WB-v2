@@ -1,10 +1,15 @@
 //Estilo de Aromas
 /*Estilo de Aromas*/
 
+.aromas {
+    padding-top: 3%;
+}
+
 .coco {
-    padding: 3%;
+    padding-left: 3%;
     text-align: justify;
     width: 90%;
+    padding-top: 0%;
     img {
         width: 150%
     }
@@ -18,9 +23,10 @@
     }
 }
 .lavanda {
-    padding: 3%;
+    padding-left: 3%;
     text-align: justify;
     width: 90%;
+    padding-top: 0%;
     //Falta ocultar la imagen mobileen web y web en mobile
     img {
         width: 25%

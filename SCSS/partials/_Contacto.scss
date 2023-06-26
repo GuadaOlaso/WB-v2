@@ -1,0 +1,47 @@
+// Estilo de Contacto
+/*Estilo de Contacto*/
+
+main {
+    padding: 3%;
+    h1 {
+        margin-bottom: 5%;
+    }
+    form {
+        width: 70%;
+        background-color: $ColorNosotras;
+        margin-bottom: 5%
+    }
+    .formulario {
+        @include flex (row, space-evenly, center);
+        width: 100%;
+        margin-bottom: 0%
+    }
+    .formulariodatos{
+        @include flex (column, space-evenly, left);
+        margin: 5%;
+        font-size: 2.5rem;
+        border-radius: 2%;
+        border-width: thin;
+        font-family: $Tipografia;
+        width: 50%;
+    }
+    .formulariopedido {
+        @extend .formulariodatos;
+    }
+    label {
+        font-family: $Tipografia;
+        font-size: 2.5rem;
+    }
+    input {
+        font-family: $TipografiaNegrita;
+        font-size: 2rem;
+    }
+    select {
+        @extend input
+    }
+    .botonformulario {
+        text-align: end;
+        margin-bottom: 3%;
+        margin-right: 3%;
+    }
+}

@@ -62,7 +62,7 @@ header {
 
     
 // Estilo del main    
-/*Estilo de MAin*/
+/*Estilo de Main*/
 main {
     height: 100%;
     background-color: $ColorFondo;
@@ -74,7 +74,6 @@ main {
     }
     h2 {
         font-size: 4rem;
-        margin-bottom: 3%;
         @include flex (column, center, center);
     }
     h3 {
@@ -127,4 +126,22 @@ footer{
 }
 .imagenFooter {
     @include flex (row, end, center);
+}
+
+// Estilo de Boton    
+/*Estilo de Boton*/
+
+.boton{
+    background-color: $Gris;
+    font-family: $TipografiaNegrita;
+    font-size: 2rem;
+    border: $Gris;
+    padding: 2% 4%;
+    color: whitesmoke;
+    margin: 2%;
+    border-radius: 15%;
+    box-shadow: #323233;
+    &:hover{
+        background-color: $GrisHover;
+    }
 }
