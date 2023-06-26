@@ -187,6 +187,45 @@ main {
       main ul li:hover {
         font-family: "Adam Bold"; }
 
+/*Estilo de Aromas*/
+.coco {
+  padding: 3%;
+  text-align: justify;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .coco img {
+    width: 150%; }
+  .coco .cocotexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .coco:hover {
+    background-color: #e6d7c5;
+    font-family: "Adam Bold"; }
+
+.lavanda, .jazmin, .azahar, .lima {
+  padding: 3%;
+  text-align: justify;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .lavanda img, .jazmin img, .azahar img, .lima img {
+    width: 25%; }
+  .lavanda .lavandatexto, .jazmin .lavandatexto, .azahar .lavandatexto, .lima .lavandatexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .lavanda:hover, .jazmin:hover, .azahar:hover, .lima:hover {
+    background-color: #e6d7c5;
+    font-family: "Adam Bold"; }
+
 /*Estilo de Gracias*/
 main {
   padding: 0%; }

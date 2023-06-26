@@ -1,0 +1,39 @@
+//Estilo de Aromas
+/*Estilo de Aromas*/
+
+.coco {
+    padding: 3%;
+    text-align: justify;
+    width: 90%;
+    img {
+        width: 150%
+    }
+    @include flex (row, center, center);
+    .cocotexto {
+        @include flex (column, center, center);
+    }
+    &:hover {
+        background-color: $ColorNosotras;
+        font-family: $TipografiaNegrita;
+    }
+}
+.lavanda {
+    padding: 3%;
+    text-align: justify;
+    width: 90%;
+    //Falta ocultar la imagen mobileen web y web en mobile
+    img {
+        width: 25%
+    }
+    @include flex (row, center, center);
+    .lavandatexto {
+        @include flex (column, center, center);
+    }
+    &:hover {
+        background-color: $ColorNosotras;
+        font-family: $TipografiaNegrita;
+    }
+}
+.jazmin, .azahar, .lima {
+    @extend .lavanda
+}
